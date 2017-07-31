@@ -1,5 +1,5 @@
 # Template information section
-name: "swifty_viper"
+name: "swifty_viper_default"
 summary: "Swift VIPER module template with UIViewController playing as a View."
 author: "Valeriy Popov"
 version: "0.1.0"

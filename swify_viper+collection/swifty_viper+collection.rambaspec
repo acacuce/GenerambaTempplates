@@ -1,5 +1,5 @@
 # Template information section
-name: "swifty_viper"
+name: "swifty_viper+collection"
 summary: "Swift VIPER module template including collection view"
 author: "Nikita Soldatov"
 version: "0.1.0"
