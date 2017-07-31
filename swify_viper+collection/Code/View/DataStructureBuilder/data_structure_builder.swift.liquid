@@ -1,0 +1,26 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+protocol {{ module_info.name }}DataStructureBuilderProtocol {
+  /// Метод собирающий структуру коллекции
+  ///
+  ///
+  /// - Returns: структура коллекции
+  func buildDataSourceStructure() -> CollectionViewDataSourceStructure
+}
+
+
+class {{ module_info.name }}DataStructureBuilder: {{ module_info.name }}DataStructureBuilderProtocol {
+	
+	func buildDataSourceStructure() -> CollectionViewDataSourceStructure {
+
+	}
+
+}

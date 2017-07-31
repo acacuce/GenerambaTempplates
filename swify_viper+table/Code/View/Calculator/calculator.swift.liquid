@@ -1,0 +1,21 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}Calculator: TableViewCalculatorProtocol {
+
+  func tableView(_ tableView: UITableView, sizeForCellObject: CellObjectProtocol, at indexPath: IndexPath) -> CGSize {
+    return CGSize(width: 0, height: 0)
+  }
+
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 0
+  }
+
+}

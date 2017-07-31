@@ -1,0 +1,66 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+class {{ module_info.name }}Calculator: CollectionViewCalculatorProtocol {
+  
+  private let leftInset: CGFloat = 0
+  private let rightInset: CGFloat = 0
+  private let topInset: CGFloat = 0
+  private let bottomInset: CGFloat = 0
+  private let minimumLineSpacing: CGFloat = 0
+  private let minimumInteritemSpacing: CGFloat = 0
+  private let itemHeight: CGFloat = 0
+  private let headerHeight: CGFloat = 0
+
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      sizeForCellObject: CellObjectProtocol,
+                      at indexPath: IndexPath) -> CGSize {
+    let width: CGFloat = collectionView.width - CGFloat(leftInset + rightInset)
+    return CGSize(width: width, height: itemHeight)
+  }
+
+   func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout, insetForSectionObject: SectionObjectProtocol,
+                      at section: Int) -> UIEdgeInsets {
+    return UIEdgeInsets(top: topInset, left: leftInset, bottom: bottomInset, right: rightInset)
+  }
+
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      minimumLineSpacingForSectionObject: SectionObjectProtocol,
+                      at section: Int) -> CGFloat {
+    return minimumLineSpacing
+
+  }
+
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      minimumInteritemSpacingForSectionObject: SectionObjectProtocol,
+                      at section: Int) -> CGFloat {
+    return minimumInteritemSpacing
+
+  }
+
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      referenceSizeForHeaderSectionObject: SectionObjectProtocol,
+                      in section: Int) -> CGSize {
+    return CGSize(width: 0, height: 0)
+  }
+
+  func collectionView(_ collectionView: UICollectionView,
+                      layout collectionViewLayout: UICollectionViewLayout,
+                      referenceSizeForFooterSectionObject: SectionObjectProtocol,
+                      in section: Int) -> CGSize {
+    return CGSize(width: 0, height: 0)
+  }
+
+}
